@@ -6,14 +6,14 @@ MIN_OPERAND = 3
 MAX_OPERAND = 12
 TOTAL_PROBLEMS = 10
 
-
+# generat a opreation math
 def generate_problem():
     left = random.randint(MIN_OPERAND, MAX_OPERAND)
     right = random.randint(MIN_OPERAND, MAX_OPERAND)
     operator = random.choice(OPERATOR)
 
     expr = str(left) + ' ' + operator + ' ' + str(right)
-    answer = eval(expr)
+    answer = eval(expr)#return a str num to int number
     return expr, answer
 
 
